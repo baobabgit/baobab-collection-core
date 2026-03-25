@@ -42,3 +42,8 @@ Cette feature doit rendre la librairie compréhensible, publiable et auditable a
 - la documentation permet de comprendre et utiliser la librairie ;
 - le projet est prêt pour audit final ;
 - les prérequis de release sont explicités.
+
+## Livraison (résumé)
+- README racine structuré ; `docs/architecture.md`, `business_domain.md`, `synchronization.md` ;
+  `docs/features/README.md` ; `docs/RELEASE_CHECKLIST.md` ; CHANGELOG **0.12.0** ;
+  test `tests/baobab_collection_core/test_readme_documented_imports.py`.

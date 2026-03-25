@@ -5,6 +5,16 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.12.0] - 2026-03-25
+
+### Added
+
+- Documentation utilisateur et intégrateur : [README.md](README.md) complété ; guides
+  [architecture.md](docs/architecture.md), [business_domain.md](docs/business_domain.md),
+  [synchronization.md](docs/synchronization.md), index [docs/features/README.md](docs/features/README.md).
+- [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md) pour préparation de release sans publication automatique.
+- Test de fumée `test_readme_documented_imports.py` validant les imports illustrés dans le README.
+
 ## [0.11.0] - 2026-03-25
 
 ### Added
