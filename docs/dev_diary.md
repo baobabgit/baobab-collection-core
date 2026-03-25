@@ -4,6 +4,25 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (mutations locales offline-first, feature 08)
+
+### Modifications
+
+- Introduction de `LocalMutation` et d'un journal porté par `LocalMutationJournalPort` ;
+  `MutationTrackingService` pour tracer les changements en attente sans transport réseau.
+
+### Buts
+
+- Compléter les `SyncState` / `EntityMetadata` des agrégats avec une piste d'audit exploitable
+  par une synchro ultérieure.
+
+### Impact
+
+- Les services métier existants peuvent appeler le tracking après mutation ; pas d'event sourcing
+  complet ni de client HTTP dans ce package.
+
+---
+
 ## 2026-03-25 (services métier collection, feature 07)
 
 ### Modifications
