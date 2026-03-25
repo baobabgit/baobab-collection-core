@@ -359,6 +359,8 @@ celerybeat.pid
 .env
 .venv
 .venv-pypi-test/
+.rc-test-venv/
+.rc-test-venv-sdist/
 env/
 venv/
 ENV/

@@ -25,6 +25,7 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
+  "build>=1.0.0,<2.0",
   "bandit[toml]>=1.7.0,<2.0",
   "black>=24.0.0,<26.0",
   "Flake8-pyproject>=1.2.0,<2.0",
