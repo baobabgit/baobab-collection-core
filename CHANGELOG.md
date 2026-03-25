@@ -5,6 +5,15 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.2.0] - 2026-03-25
+
+### Added
+
+- Primitives de domaine : `DomainId`, `EntityVersion`, `AuditTimestamps`, `EntityMetadata`, `EntityBase`.
+- Énums `SyncState` et `EntityLifecycleState`.
+- Exception `ValidationException` pour les règles de validation projet.
+- Tests unitaires associés (couverture maintenue).
+
 ## [0.1.0] - 2026-03-25
 
 ### Added
