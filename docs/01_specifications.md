@@ -809,15 +809,17 @@ Le projet sera considéré conforme si :
 
 ## 24. Critères de réussite pour une première version stable
 
-Pour viser une `v1.0.0`, la librairie devra au minimum garantir :
-- stabilité de l’API publique ;
-- cohérence du modèle métier ;
-- persistance locale fiable ;
-- synchronisation fonctionnelle sur un backend de référence ;
-- gestion documentée des conflits ;
-- documentation claire ;
-- tests complets et reproductibles ;
-- absence de dette bloquante identifiée.
+La version **`v1.0.0`** du présent dépôt est sortie avec les objectifs suivants **remplis au
+niveau du noyau livré** (sans backend distant imposé — la synchro reste abstraite) :
+
+- stabilité de l’API publique documentée (`__all__`, racine minimale) ;
+- cohérence du modèle métier et des services applicatifs ;
+- persistance via **ports** ; adaptateurs mémoire de référence ;
+- synchronisation **local / distant** modélisée (DTO, plans, conflits) ;
+- gestion documentée des conflits (détection, stratégies injectables) ;
+- documentation README + `docs/` ;
+- tests complets et reproductibles, couverture ≥ 90 % ;
+- classifier *Production/Stable* et versioning SemVer à partir de **1.0.0**.
 
 ## 25. Découpage recommandé en grandes fonctionnalités
 
