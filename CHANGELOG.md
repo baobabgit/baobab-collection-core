@@ -5,6 +5,20 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.11.0] - 2026-03-25
+
+### Added
+
+- Package `infrastructure.memory` : adaptateurs mémoire officiels pour tous les ports de
+  persistance principaux (usagers, cartes, copies, contenants, journal de mutations).
+- Tests d'intégration (`tests/.../integration/`) avec fixture `IntegrationHarness` et marqueur
+  pytest `integration`.
+
+### Changed
+
+- Les modules `tests/.../support/in_memory_*` réexportent désormais l'infrastructure pour
+  éviter la duplication.
+
 ## [0.10.0] - 2026-03-25
 
 ### Added

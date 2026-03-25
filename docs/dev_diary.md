@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (adaptateurs mémoire + intégration, feature 11)
+
+### Modifications
+
+- Emplacement canonique des adaptateurs sous `infrastructure.memory` ; suite d'intégration
+  couvrant création entités, inventaire, journal, synchro et conflit simulé.
+
+### Buts
+
+- Référence de comportement des ports et garde-fous de non-régression sur flux métier.
+
+### Impact
+
+- Les applications de démo ou tests externes peuvent importer les adaptateurs depuis le package.
+
+---
+
 ## 2026-03-25 (conflits sync, feature 10)
 
 ### Modifications
