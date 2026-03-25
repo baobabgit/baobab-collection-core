@@ -14,6 +14,18 @@ from baobab_collection_core.domain.local_entity_kind import LocalEntityKind
 from baobab_collection_core.domain.local_mutation import LocalMutation
 from baobab_collection_core.domain.local_mutation_kind import LocalMutationKind
 from baobab_collection_core.domain.physical_copy import PhysicalCopy
+from baobab_collection_core.domain.sync_delta_kind import SyncDeltaKind
+from baobab_collection_core.domain.sync_dtos import (
+    EntitySyncApplyRecord,
+    EntitySyncDelta,
+    LocalEntitySyncSnapshot,
+    RemoteEntitySyncSnapshot,
+    SyncPlan,
+    SyncPlanItem,
+    SynchronizationBatchResult,
+)
+from baobab_collection_core.domain.sync_plan_action import SyncPlanAction
+from baobab_collection_core.domain.sync_session_outcome import SyncSessionOutcome
 from baobab_collection_core.domain.physical_copy_business_status import PhysicalCopyBusinessStatus
 from baobab_collection_core.domain.physical_copy_condition import PhysicalCopyCondition
 from baobab_collection_core.domain.sync_state import SyncState
@@ -35,6 +47,16 @@ __all__: list[str] = [
     "PhysicalCopy",
     "PhysicalCopyBusinessStatus",
     "PhysicalCopyCondition",
+    "EntitySyncApplyRecord",
+    "EntitySyncDelta",
+    "LocalEntitySyncSnapshot",
+    "RemoteEntitySyncSnapshot",
+    "SyncDeltaKind",
+    "SyncPlan",
+    "SyncPlanAction",
+    "SyncPlanItem",
+    "SyncSessionOutcome",
+    "SynchronizationBatchResult",
     "SyncState",
     "UNSET",
 ]

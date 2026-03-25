@@ -4,6 +4,22 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (abstractions sync cœur, feature 09)
+
+### Modifications
+
+- `SyncCoreService`, DTO de comparaison/plan/résultat, port `RemoteEntitySyncSnapshotPort`.
+
+### Buts
+
+- Préparer synchro local/distant sans HTTP ni backend ; ouvrir la voie à la résolution de conflits (feature 10).
+
+### Impact
+
+- Les orchestrateurs pourront brancher un adaptateur réel sur le port distant et réutiliser plans et agrégats.
+
+---
+
 ## 2026-03-25 (mutations locales offline-first, feature 08)
 
 ### Modifications

@@ -31,5 +31,5 @@ class TestPackageImports:
             side_effect=importlib.metadata.PackageNotFoundError,
         ):
             importlib.reload(bcc)
-            assert bcc.__version__ == "0.8.0"
+            assert bcc.__version__ == "0.9.0"
         importlib.reload(bcc)

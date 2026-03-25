@@ -12,6 +12,7 @@ from baobab_collection_core.application.container_application_service import (
     ContainerApplicationService,
 )
 from baobab_collection_core.application.mutation_tracking_service import MutationTrackingService
+from baobab_collection_core.application.sync_core_service import SyncCoreService
 from baobab_collection_core.application.physical_copy_application_service import (
     PhysicalCopyApplicationService,
 )
@@ -27,5 +28,6 @@ __all__: list[str] = [
     "DuplicateCopySignatureGroup",
     "MutationTrackingService",
     "PhysicalCopyApplicationService",
+    "SyncCoreService",
     "UserApplicationService",
 ]

@@ -5,6 +5,15 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.9.0] - 2026-03-25
+
+### Added
+
+- Cœur de synchronisation : DTO `LocalEntitySyncSnapshot` / `RemoteEntitySyncSnapshot`, deltas,
+  `SyncPlan`, `SynchronizationBatchResult`, `SyncSessionOutcome` (synced / pending / conflict / sync_error).
+- `SyncCoreService` : comparaison, plan, consolidation de batch, application sur `EntityMetadata`.
+- Port `RemoteEntitySyncSnapshotPort` (sans transport) et exception `InvalidSyncSnapshotException`.
+
 ## [0.8.0] - 2026-03-25
 
 ### Added
