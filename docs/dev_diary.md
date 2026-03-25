@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (cartes possédées, feature 04)
+
+### Modifications
+
+- Ajout de `CollectionCard` avec identifiants interne/externe, attributs descriptifs, tags et métadonnées.
+- Port `CardRepositoryPort`, service applicatif, exceptions dédiées, adapter mémoire de test.
+
+### Buts
+
+- Modéliser la référence carte (agrégat) séparément des exemplaires physiques à venir.
+
+### Impact
+
+- Les copies physiques pourront référencer `entity_id` comme pivot sans fusionner les concepts.
+
+---
+
 ## 2026-03-25 (usagers, feature 03)
 
 ### Modifications

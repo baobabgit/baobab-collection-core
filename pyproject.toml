@@ -4,7 +4,7 @@ requires = ["setuptools>=61.0,<76.0", "wheel>=0.41.0,<1.0"]
 
 [project]
 name = "baobab-collection-core"
-version = "0.3.0"
+version = "0.4.0"
 description = "Noyau Python pour la gestion de collections (cartes, exemplaires, sync offline-first)."
 readme = "README.md"
 license = { text = "MIT" }
@@ -124,6 +124,9 @@ disable = [
 
 [tool.pylint."design"]
 max-args = 10
+
+[tool.pylint.similarities]
+min-similarity-lines = 14
 
 [tool.pylint.basic]
 good-names = ["i", "j", "k", "ex", "ok", "id", "_"]
