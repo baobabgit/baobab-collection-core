@@ -5,6 +5,20 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.0.0] - 2026-03-26
+
+### Changed
+
+- Passage en **release stable** : Trove classifier `Development Status :: 5 - Production/Stable`,
+  documentation et README alignés sur une API disciplinée (surface minimale à la racine,
+  `__all__` explicites dans les sous-packages).
+
+### Fixed
+
+- Docstring de :class:`~baobab_collection_core.domain.sync_plan_action.SyncPlanAction` pour
+  `REPORT_CONFLICT` : reflète la couche conflit déjà implémentée (plus de référence à une
+  « feature ultérieure »).
+
 ## [0.12.0] - 2026-03-25
 
 ### Added

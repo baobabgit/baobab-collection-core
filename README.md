@@ -2,7 +2,7 @@
 
 Bibliothèque Python **typée** (`py.typed`) : **noyau métier** pour la gestion de collections de cartes, d’exemplaires physiques, de contenants et d’usagers, avec une approche **offline-first** et des abstractions de **synchronisation** sans transport réseau imposé.
 
-> **Statut** : *Pre-Alpha* — API encore évolutive ; le versioning suit [SemVer](https://semver.org/lang/fr/). Aucune garantie de stabilité avant une future `1.0.0`.
+> **Version 1.0.0** — Release stable. Compatibilité suivie selon [SemVer](https://semver.org/lang/fr/) : changements incompatibles réservés aux versions **majeures** ; les sous-modules exposés via `__all__` constituent le contrat d’import stable.
 
 ## Description et objectifs
 
@@ -183,10 +183,11 @@ Rapports de couverture : `docs/tests/coverage/html/` et `coverage.xml`.
 
 ## Versioning
 
-- Versions **0.y.z** jusqu’à stabilisation ; **Breaking changes** documentés dans [CHANGELOG.md](CHANGELOG.md).
-- La version du package est définie dans `pyproject.toml` ; à l’exécution, `baobab_collection_core.__version__` lit les métadonnées d’installation ou une **repli** si le package n’est pas installé depuis une distribution.
+- À partir de **1.0.0**, le projet suit [SemVer](https://semver.org/lang/fr/) : **MAJEUR** pour ruptures d’API documentées, **MINEUR** pour ajouts rétrocompatibles, **PATCH** pour corrections.
+- L’historique détaillé est dans [CHANGELOG.md](CHANGELOG.md).
+- La version canonique est `pyproject.toml` ; `baobab_collection_core.__version__` lit les métadonnées d’installation ou une **repli** alignée sur cette version.
 
-Checklist avant release : [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
+Checklist avant une prochaine release : [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
 
 ## Contribution
 

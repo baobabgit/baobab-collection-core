@@ -2,6 +2,8 @@
 
 Ce document résume l’architecture **réellement implémentée** dans le dépôt (hexagonale / ports-adaptateurs). Il complète le [cahier des charges](01_specifications.md) sans le dupliquer.
 
+À partir de la **1.0.0**, le contrat d’import **stable** pour les consommateurs repose sur les symboles listés dans `__all__` de chaque sous-package (`domain`, `application`, `ports`, `infrastructure`, `exceptions`) ; le `__init__.py` racine demeure intentionnellement minimal (voir [README](../README.md)).
+
 ## Vue en couches
 
 ```text

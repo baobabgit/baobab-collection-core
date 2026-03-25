@@ -4,7 +4,7 @@ requires = ["setuptools>=61.0,<76.0", "wheel>=0.41.0,<1.0"]
 
 [project]
 name = "baobab-collection-core"
-version = "0.12.0"
+version = "1.0.0"
 description = "Noyau Python pour la gestion de collections (cartes, exemplaires, sync offline-first)."
 readme = "README.md"
 license = { text = "MIT" }
@@ -52,7 +52,7 @@ target-version = ["py311"]
 include = "\\.pyi?$"
 extend-exclude = "/(docs/tests/coverage|\\.venv|build|dist)/"
 
-# --- isort (référence si ajout futur ; non requis pour ce bootstrap) ---
+# --- isort (référence si ajout futur ; optionnel) ---
 
 # --- pytest ---
 [tool.pytest.ini_options]
