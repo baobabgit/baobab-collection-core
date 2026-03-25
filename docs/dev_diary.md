@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (services métier collection, feature 07)
+
+### Modifications
+
+- `CollectionBusinessService` et règles `collection_counting_rules` ; extensions du port des copies
+  pour agrégats et contenu par contenant.
+
+### Buts
+
+- Indicateurs lisibles (inventaire vs disponibilité) sans couche de reporting lourde.
+
+### Impact
+
+- CLI / UI / API pourront s'appuyer sur un contrat stable de read models légers.
+
+---
+
 ## 2026-03-25 (contenants, feature 06)
 
 ### Modifications

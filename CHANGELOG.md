@@ -5,6 +5,21 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.7.0] - 2026-03-25
+
+### Added
+
+- `CollectionBusinessService` : agrégats (cartes distinctes possédées, totaux inventaire,
+  exemplaires disponibles), localisation de copie, copies actives par carte, contenu de contenant.
+- Règles explicites dans `collection_counting_rules` (inventaire vs disponibilité, exclusions
+  des copies supprimées logiquement).
+- Détection de doublons simples : entrées catalogue (`external_id`) et signatures de copies
+  actives `(carte, propriétaire, langue, finition)`.
+- Extensions du port `PhysicalCopyRepositoryPort` : `list_all_physical_copies`,
+  `list_by_container_id`.
+- Types read-model : `CopyLocation`, `ContainerInventoryView`, `DuplicateCatalogCardGroup`,
+  `DuplicateCopySignatureGroup`.
+
 ## [0.6.0] - 2026-03-25
 
 ### Added
