@@ -11,7 +11,7 @@ from baobab_collection_core.exceptions import BaobabCollectionCoreException
 try:
     __version__: str = version("baobab-collection-core")
 except PackageNotFoundError:
-    __version__ = "0.4.0"
+    __version__ = "0.5.0"
 
 __all__: list[str] = [
     "BaobabCollectionCoreException",
