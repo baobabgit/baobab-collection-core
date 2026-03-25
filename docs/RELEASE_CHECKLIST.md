@@ -4,9 +4,11 @@ Liste opérationnelle **avant** de taguer ou publier une version (PyPI ou dépô
 
 ## Code et API
 
-- [ ] `pyproject.toml` : version **SemVer** cohérente avec [CHANGELOG.md](CHANGELOG.md).
+- [ ] `pyproject.toml` : version **SemVer** cohérente avec [CHANGELOG.md](../CHANGELOG.md).
+- [ ] Classifiers PyPI : pour une release stable, `Development Status :: 5 - Production/Stable` (ou équivalent) cohérent avec la politique produit.
 - [ ] `baobab_collection_core.__version__` : repli aligné avec la version cible si le package n’est pas installé depuis une wheel/sdist (voir `__init__.py`).
 - [ ] `tests/baobab_collection_core/test_package.py` : assertion de repli `__version__` mise à jour.
+- [ ] Surface à la racine : uniquement les symboles documentés (`__all__` du `__init__.py` racine).
 - [ ] Pas de régression API documentée dans le README sans entrée CHANGELOG (ou version **major** / section **Breaking**).
 
 ## Qualité

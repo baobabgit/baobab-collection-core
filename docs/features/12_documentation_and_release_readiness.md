@@ -45,5 +45,6 @@ Cette feature doit rendre la librairie compréhensible, publiable et auditable a
 
 ## Livraison (résumé)
 - README racine structuré ; `docs/architecture.md`, `business_domain.md`, `synchronization.md` ;
-  `docs/features/README.md` ; `docs/RELEASE_CHECKLIST.md` ; CHANGELOG **0.12.0** ;
+  `docs/features/README.md` ; `docs/RELEASE_CHECKLIST.md` ; documentation des releases **0.12.x** ;
   test `tests/baobab_collection_core/test_readme_documented_imports.py`.
+- Stabilisation **1.0.0** : voir CHANGELOG et README (classifier *Production/Stable*, contrat API racine).

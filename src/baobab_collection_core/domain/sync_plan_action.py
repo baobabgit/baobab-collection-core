@@ -9,7 +9,7 @@ class SyncPlanAction(StrEnum):
     :cvar NO_OP: Aucune opération I/O attendue.
     :cvar PUSH: Envoyer les changements locaux.
     :cvar PULL: Récupérer la révision distante.
-    :cvar REPORT_CONFLICT: Escalade / résolution (feature conflits ultérieure).
+    :cvar REPORT_CONFLICT: Escalade vers détection / résolution de conflit applicative.
     """
 
     NO_OP = "no_op"

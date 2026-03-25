@@ -4,6 +4,19 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-26 (stabilisation v1.0.0)
+
+### Modifications
+
+- Version **1.0.0**, classifier PyPI *Production/Stable*, README / CHANGELOG / repli `__version__`.
+- Contrat d’API racine explicite ; docstring `SyncPlanAction.REPORT_CONFLICT` corrigée.
+
+### Buts
+
+- Figer une base SemVer exploitable par les consommateurs sans signal « pré-alpha ».
+
+---
+
 ## 2026-03-25 (documentation & préparation release, feature 12)
 
 ### Modifications
