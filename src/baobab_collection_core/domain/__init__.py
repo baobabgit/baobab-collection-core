@@ -3,6 +3,8 @@
 from baobab_collection_core.domain.audit_timestamps import AuditTimestamps
 from baobab_collection_core.domain.collection_card import UNSET, CollectionCard
 from baobab_collection_core.domain.collection_user import CollectionUser
+from baobab_collection_core.domain.container import Container
+from baobab_collection_core.domain.container_kind import ContainerKind
 from baobab_collection_core.domain.domain_id import DomainId
 from baobab_collection_core.domain.entity_base import EntityBase
 from baobab_collection_core.domain.entity_lifecycle_state import EntityLifecycleState
@@ -17,6 +19,8 @@ __all__: list[str] = [
     "AuditTimestamps",
     "CollectionCard",
     "CollectionUser",
+    "Container",
+    "ContainerKind",
     "DomainId",
     "EntityBase",
     "EntityLifecycleState",
