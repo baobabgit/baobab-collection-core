@@ -4,16 +4,21 @@ Les entrées les plus récentes en premier.
 
 ---
 
-## 2026-03-26 (stabilisation v1.0.0)
+## 2026-03-26 (release stable v1.0.0 — packaging et documentation)
 
 ### Modifications
 
-- Version **1.0.0**, classifier PyPI *Production/Stable*, README / CHANGELOG / repli `__version__`.
-- Contrat d’API racine explicite ; docstring `SyncPlanAction.REPORT_CONFLICT` corrigée.
+- Version **1.0.0**, classifier PyPI **Production/Stable** dans `pyproject.toml` (aucune entrée
+  *Pre-Alpha* résiduelle côté manifeste).
+- README (contrat d’API, mention explicite du classifier), **CHANGELOG** 1.0.0 enrichi
+  (périmètre, contrat public), spécification §24, fiches `docs/features/12`, repli `__version__`.
+- Contrat d’API racine explicite ; docstring `SyncPlanAction.REPORT_CONFLICT` corrigée
+  (livraisons précédentes sur la même baseline).
 
 ### Buts
 
-- Figer une base SemVer exploitable par les consommateurs sans signal « pré-alpha ».
+- Base SemVer exploitable par les consommateurs, statut stable cohérent dans tout le dépôt
+  (hors historique 0.x du CHANGELOG et mentions explicatives).
 
 ---
 

@@ -4,6 +4,8 @@ Bibliothèque Python **typée** (`py.typed`) : **noyau métier** pour la gestion
 
 > **Version 1.0.0** — Release stable. Compatibilité suivie selon [SemVer](https://semver.org/lang/fr/) : changements incompatibles réservés aux versions **majeures** ; les sous-modules exposés via `__all__` constituent le contrat d’import stable.
 
+Le manifeste du package (`pyproject.toml`) déclare notamment le classifier PyPI **`Development Status :: 5 - Production/Stable`** et `version = "1.0.0"`, en phase avec cette documentation.
+
 ## Description et objectifs
 
 Le projet fournit :

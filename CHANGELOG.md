@@ -7,11 +7,40 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ## [1.0.0] - 2026-03-26
 
+### Résumé
+
+Première version **stable** publiable au sens SemVer : le cœur métier, les ports et les
+abstractions de synchro sont considérés comme gelés pour les imports documentés (`__all__`
+des sous-packages, racine minimale).
+
+### Périmètre fonctionnel couvert
+
+- **Domaine** : usagers, cartes catalogue, exemplaires physiques, contenants ; métadonnées
+  (`EntityMetadata`, `EntityVersion`, `SyncState`) ; mutations locales (`LocalMutation`) ;
+  modèle de synchro (instantanés, deltas, plans, issues de session) ; détection et décisions
+  de conflit (`SyncConflict`, stratégies injectables).
+- **Application** : services CRUD et règles associées ; inventaire et agrégats
+  (`CollectionBusinessService`, `collection_counting_rules`) ; journal offline-first
+  (`MutationTrackingService`) ; cœur de synchro et résolution de conflits applicative.
+- **Ports** : persistance cartes, usagers, copies, contenants ; journal de mutations ;
+  fourniture d’instantanés distants (sans transport imposé).
+- **Infrastructure** : adaptateurs mémoire de référence (`infrastructure.memory`).
+- **Qualité** : tests unitaires et d’intégration, couverture ≥ 90 %, typage strict, lint.
+
+### Contrat d’API publique
+
+- Racine du package : uniquement `BaobabCollectionCoreException` et `__version__` (repli
+  aligné sur cette version si métadonnées d’installation absentes).
+- API stable ailleurs : symboles exportés via `__all__` dans `domain`, `application`,
+  `ports`, `infrastructure`, `exceptions` (voir README et tests de contrat).
+
 ### Changed
 
-- Passage en **release stable** : Trove classifier `Development Status :: 5 - Production/Stable`,
-  documentation et README alignés sur une API disciplinée (surface minimale à la racine,
-  `__all__` explicites dans les sous-packages).
+- **Packaging** : `version` **1.0.0**, classifier PyPI `Development Status :: 5 - Production/Stable`
+  (cohérent avec le statut documenté ; correction de toute incohérence résiduelle avec
+  *Pre-Alpha*).
+- Documentation : README, guides `docs/`, checklist de release, alignment spécification
+  « critères v1 ».
 
 ### Fixed
 
