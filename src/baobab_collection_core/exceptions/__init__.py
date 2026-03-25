@@ -10,6 +10,7 @@ from .invalid_card_exception import InvalidCardException
 from .invalid_container_exception import InvalidContainerException
 from .invalid_local_mutation_exception import InvalidLocalMutationException
 from .invalid_physical_copy_exception import InvalidPhysicalCopyException
+from .invalid_sync_snapshot_exception import InvalidSyncSnapshotException
 from .invalid_user_exception import InvalidUserException
 from .mutation_not_found_exception import MutationNotFoundException
 from .physical_copy_not_found_exception import PhysicalCopyNotFoundException
@@ -27,6 +28,7 @@ __all__: list[str] = [
     "InvalidContainerException",
     "InvalidLocalMutationException",
     "InvalidPhysicalCopyException",
+    "InvalidSyncSnapshotException",
     "InvalidUserException",
     "MutationNotFoundException",
     "PhysicalCopyNotFoundException",
