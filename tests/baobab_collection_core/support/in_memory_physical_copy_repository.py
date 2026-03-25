@@ -30,6 +30,23 @@ class InMemoryPhysicalCopyRepository(PhysicalCopyRepositoryPort):
             )
         )
 
+    def list_all_physical_copies(self) -> Sequence[PhysicalCopy]:
+        """Voir :meth:`PhysicalCopyRepositoryPort.list_all_physical_copies`."""
+        return tuple(sorted(self._storage.values(), key=lambda item: item.entity_id.value))
+
+    def list_by_container_id(self, container_id: DomainId) -> Sequence[PhysicalCopy]:
+        """Voir :meth:`PhysicalCopyRepositoryPort.list_by_container_id`."""
+        return tuple(
+            sorted(
+                (
+                    c
+                    for c in self._storage.values()
+                    if c.container_id is not None and c.container_id.value == container_id.value
+                ),
+                key=lambda item: item.entity_id.value,
+            )
+        )
+
     def save(self, physical_copy: PhysicalCopy) -> None:
         """Upsert."""
         self._storage[physical_copy.entity_id.value] = physical_copy

@@ -21,5 +21,16 @@ class PhysicalCopyRepositoryPort(ABC):
         """Toutes les copies liées à une carte (y compris supprimées logiquement)."""
 
     @abstractmethod
+    def list_all_physical_copies(self) -> Sequence[PhysicalCopy]:
+        """Vue matérielle complète (actives et supprimées logiquement).
+
+        Utilisée pour agrégats d'inventaire ; le filtrage métier reste côté service.
+        """
+
+    @abstractmethod
+    def list_by_container_id(self, container_id: DomainId) -> Sequence[PhysicalCopy]:
+        """Copies dont le ``container_id`` courant correspond (y compris supprimées)."""
+
+    @abstractmethod
     def save(self, physical_copy: PhysicalCopy) -> None:
         """Crée ou met à jour la copie."""
