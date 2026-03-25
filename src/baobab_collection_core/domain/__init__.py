@@ -1,6 +1,7 @@
 """Primitives de domaine partagées (identifiants, métadonnées, versions, synchro)."""
 
 from baobab_collection_core.domain.audit_timestamps import AuditTimestamps
+from baobab_collection_core.domain.conflict_resolution_decision import ConflictResolutionDecision
 from baobab_collection_core.domain.collection_card import UNSET, CollectionCard
 from baobab_collection_core.domain.collection_user import CollectionUser
 from baobab_collection_core.domain.container import Container
@@ -14,6 +15,8 @@ from baobab_collection_core.domain.local_entity_kind import LocalEntityKind
 from baobab_collection_core.domain.local_mutation import LocalMutation
 from baobab_collection_core.domain.local_mutation_kind import LocalMutationKind
 from baobab_collection_core.domain.physical_copy import PhysicalCopy
+from baobab_collection_core.domain.sync_conflict import SyncConflict
+from baobab_collection_core.domain.sync_conflict_kind import SyncConflictKind
 from baobab_collection_core.domain.sync_delta_kind import SyncDeltaKind
 from baobab_collection_core.domain.sync_dtos import (
     EntitySyncApplyRecord,
@@ -32,6 +35,7 @@ from baobab_collection_core.domain.sync_state import SyncState
 
 __all__: list[str] = [
     "AuditTimestamps",
+    "ConflictResolutionDecision",
     "CollectionCard",
     "CollectionUser",
     "Container",
@@ -51,6 +55,8 @@ __all__: list[str] = [
     "EntitySyncDelta",
     "LocalEntitySyncSnapshot",
     "RemoteEntitySyncSnapshot",
+    "SyncConflict",
+    "SyncConflictKind",
     "SyncDeltaKind",
     "SyncPlan",
     "SyncPlanAction",

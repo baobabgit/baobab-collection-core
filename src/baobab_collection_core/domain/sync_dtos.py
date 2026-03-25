@@ -13,7 +13,7 @@ from baobab_collection_core.domain.sync_state import SyncState
 
 
 @dataclass(frozen=True, slots=True)
-class LocalEntitySyncSnapshot:
+class LocalEntitySyncSnapshot:  # pylint: disable=too-many-instance-attributes
     """Vue locale minimaliste pour la couche de synchro (sans entité complète).
 
     :ivar entity_id: Identifiant de l'entité.
@@ -21,6 +21,9 @@ class LocalEntitySyncSnapshot:
     :ivar version: Révision locale (entier, sémantique alignée sur ``EntityVersion`` du domaine).
     :ivar sync_state: État dans le pipeline local.
     :ivar is_logically_deleted: Tombeau logique observé localement.
+    :ivar parent_container_id: Contenant parent courant, si la modélisation le permet.
+    :ivar content_fingerprint: Empreinte optionnelle pour détecter des forks de contenu.
+    :ivar external_business_key: Clé métier externe (SKU, codes catalogue, etc.).
     """
 
     entity_id: DomainId
@@ -28,6 +31,9 @@ class LocalEntitySyncSnapshot:
     version: int
     sync_state: SyncState
     is_logically_deleted: bool
+    parent_container_id: DomainId | None = None
+    content_fingerprint: str | None = None
+    external_business_key: str | None = None
 
     def has_unresolved_local_work(self) -> bool:
         """Vrai si des changements locaux ou erreurs requièrent encore une action de synchro."""
@@ -40,19 +46,25 @@ class LocalEntitySyncSnapshot:
 
 
 @dataclass(frozen=True, slots=True)
-class RemoteEntitySyncSnapshot:
+class RemoteEntitySyncSnapshot:  # pylint: disable=too-many-instance-attributes
     """État connu ou supposé côté pair (fourni par un futur adaptateur).
 
     :ivar entity_id: Identifiant corrélé localement.
     :ivar present: Faux si l'entité n'existe pas encore distamment.
     :ivar version: Révision distante ; ignorée si ``present`` est faux.
     :ivar is_logically_deleted: Tombeau côté pair.
+    :ivar parent_container_id: Contenant parent côté pair (optionnel).
+    :ivar content_fingerprint: Empreinte de contenu distante (optionnel).
+    :ivar external_business_key: Clé métier externe distante (optionnel).
     """
 
     entity_id: DomainId
     present: bool
     version: int
     is_logically_deleted: bool
+    parent_container_id: DomainId | None = None
+    content_fingerprint: str | None = None
+    external_business_key: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
