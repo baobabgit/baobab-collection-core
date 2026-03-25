@@ -10,6 +10,9 @@ from baobab_collection_core.domain.entity_base import EntityBase
 from baobab_collection_core.domain.entity_lifecycle_state import EntityLifecycleState
 from baobab_collection_core.domain.entity_metadata import EntityMetadata
 from baobab_collection_core.domain.entity_version import EntityVersion
+from baobab_collection_core.domain.local_entity_kind import LocalEntityKind
+from baobab_collection_core.domain.local_mutation import LocalMutation
+from baobab_collection_core.domain.local_mutation_kind import LocalMutationKind
 from baobab_collection_core.domain.physical_copy import PhysicalCopy
 from baobab_collection_core.domain.physical_copy_business_status import PhysicalCopyBusinessStatus
 from baobab_collection_core.domain.physical_copy_condition import PhysicalCopyCondition
@@ -26,6 +29,9 @@ __all__: list[str] = [
     "EntityLifecycleState",
     "EntityMetadata",
     "EntityVersion",
+    "LocalEntityKind",
+    "LocalMutation",
+    "LocalMutationKind",
     "PhysicalCopy",
     "PhysicalCopyBusinessStatus",
     "PhysicalCopyCondition",
