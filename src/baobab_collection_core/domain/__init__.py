@@ -8,6 +8,9 @@ from baobab_collection_core.domain.entity_base import EntityBase
 from baobab_collection_core.domain.entity_lifecycle_state import EntityLifecycleState
 from baobab_collection_core.domain.entity_metadata import EntityMetadata
 from baobab_collection_core.domain.entity_version import EntityVersion
+from baobab_collection_core.domain.physical_copy import PhysicalCopy
+from baobab_collection_core.domain.physical_copy_business_status import PhysicalCopyBusinessStatus
+from baobab_collection_core.domain.physical_copy_condition import PhysicalCopyCondition
 from baobab_collection_core.domain.sync_state import SyncState
 
 __all__: list[str] = [
@@ -19,6 +22,9 @@ __all__: list[str] = [
     "EntityLifecycleState",
     "EntityMetadata",
     "EntityVersion",
+    "PhysicalCopy",
+    "PhysicalCopyBusinessStatus",
+    "PhysicalCopyCondition",
     "SyncState",
     "UNSET",
 ]

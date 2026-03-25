@@ -4,6 +4,25 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (copies physiques, feature 05)
+
+### Modifications
+
+- Ajout de `PhysicalCopy` (carte, propriétaire, contenant optionnel, descripteurs, état matériel,
+  statut métier, métadonnées / synch / soft delete).
+- Port et service applicatif ; exceptions dédiées ; adapter mémoire et tests.
+
+### Buts
+
+- Distinct de la référence carte : plusieurs exemplaires par carte, prêts pour la synch
+  offline-first.
+
+### Impact
+
+- Les conteneurs pourront être rattachés sans logique de navigation avancée pour l'instant.
+
+---
+
 ## 2026-03-25 (cartes possédées, feature 04)
 
 ### Modifications

@@ -5,6 +5,17 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.5.0] - 2026-03-25
+
+### Added
+
+- Entité `PhysicalCopy` (exemplaire physique rattaché à une carte et un propriétaire).
+- Énums `PhysicalCopyCondition`, `PhysicalCopyBusinessStatus`.
+- Port `PhysicalCopyRepositoryPort`, `PhysicalCopyApplicationService` (création, mise à jour,
+  transitions d'état, rattachement contenant, suppression logique, liste par carte).
+- Exceptions `InvalidPhysicalCopyException`, `PhysicalCopyNotFoundException`.
+- Dépôt mémoire de test et jeux de tests domaine / application.
+
 ## [0.4.0] - 2026-03-25
 
 ### Added
