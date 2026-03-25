@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (usagers, feature 03)
+
+### Modifications
+
+- Introduction de `CollectionUser`, du port `UserRepositoryPort` et du service `UserApplicationService`.
+- Exceptions dédiées (validation, absence, doublon de nom affiché) et dépôt mémoire pour les tests applicatifs.
+
+### Buts
+
+- Couvrir création, mise à jour, désactivation, lecture et liste sans stockage concret dans le package.
+
+### Impact
+
+- Les features « collection » pourront référencer des usagers via un contrat stable.
+
+---
+
 ## 2026-03-25 (primitives domaine, feature 02)
 
 ### Modifications
