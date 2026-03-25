@@ -12,6 +12,16 @@ from baobab_collection_core.application.container_application_service import (
     ContainerApplicationService,
 )
 from baobab_collection_core.application.mutation_tracking_service import MutationTrackingService
+from baobab_collection_core.application.sync_conflict_detector import SyncConflictDetector
+from baobab_collection_core.application.sync_conflict_resolution_service import (
+    SyncConflictResolutionService,
+)
+from baobab_collection_core.application.sync_conflict_resolution_strategy import (
+    ExplicitManualSyncConflictStrategy,
+    LocalWinsSyncConflictStrategy,
+    RemoteWinsSyncConflictStrategy,
+    SyncConflictResolutionStrategy,
+)
 from baobab_collection_core.application.sync_core_service import SyncCoreService
 from baobab_collection_core.application.physical_copy_application_service import (
     PhysicalCopyApplicationService,
@@ -28,6 +38,12 @@ __all__: list[str] = [
     "DuplicateCopySignatureGroup",
     "MutationTrackingService",
     "PhysicalCopyApplicationService",
+    "ExplicitManualSyncConflictStrategy",
+    "LocalWinsSyncConflictStrategy",
+    "RemoteWinsSyncConflictStrategy",
+    "SyncConflictResolutionStrategy",
+    "SyncConflictDetector",
+    "SyncConflictResolutionService",
     "SyncCoreService",
     "UserApplicationService",
 ]

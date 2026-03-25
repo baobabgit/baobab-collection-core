@@ -5,6 +5,19 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.10.0] - 2026-03-25
+
+### Added
+
+- Détection de conflits : `SyncConflictDetector`, modèle `SyncConflict` / `SyncConflictKind`
+  (modification concurrente, suppression distante vs local dirty, divergence de version,
+  parent / contenant, collision de clé métier externe).
+- Résolution injectable : `SyncConflictResolutionStrategy`, stratégies local prioritaire,
+  distant prioritaire, conflit explicite manuel ; service `SyncConflictResolutionService`.
+- Décision `ConflictResolutionDecision` ; exception `InvalidSyncConflictResolutionException`.
+- Champs optionnels sur les instantanés de synchro : `parent_container_id`, `content_fingerprint`,
+  `external_business_key`.
+
 ## [0.9.0] - 2026-03-25
 
 ### Added

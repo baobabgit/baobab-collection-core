@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (conflits sync, feature 10)
+
+### Modifications
+
+- `SyncConflictDetector`, stratégies de résolution et `SyncConflictResolutionService` ; extension
+  des DTO d'instantanés (parent, empreinte, clé externe).
+
+### Buts
+
+- Détecter et résoudre les divergences local / distant sans UI ni backend ; compléter le cœur sync (09).
+
+### Impact
+
+- Les orchestrateurs peuvent brancher des politiques métier ou une future fusion tout en restant testables en mémoire.
+
+---
+
 ## 2026-03-25 (abstractions sync cœur, feature 09)
 
 ### Modifications
