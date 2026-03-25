@@ -4,6 +4,24 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (primitives domaine, feature 02)
+
+### Modifications
+
+- Ajout des value objects et enums sous `domain/` (identifiants UUID, version optimiste, horodatages, synchro, cycle de vie).
+- `EntityBase` comme point d’extension pour futures entités ; `ValidationException` pour les incohérences.
+- Couverture de tests exhaustive sur validations et transitions d’état.
+
+### Buts
+
+- Centraliser les briques partagées avant usager / carte / copie / contenant / mutations.
+
+### Impact
+
+- Features suivantes peuvent composer ces primitives sans dupliquer la modélisation transverse.
+
+---
+
 ## 2026-03-25 (bootstrap projet)
 
 ### Modifications
