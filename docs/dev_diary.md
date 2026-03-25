@@ -4,6 +4,24 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (contenants, feature 06)
+
+### Modifications
+
+- Ajout de `Container` (`ContainerKind`, parent optionnel, archivage) et du service applicatif
+  avec prévention de cycle sur la hiérarchie (remontée d'ancêtres).
+
+### Buts
+
+- Organiser le rangement sans incohérence structurelle ; rester compatible avec `container_id`
+  sur les copies physiques.
+
+### Impact
+
+- Navigation avancée et règles sur contenu non vide pourront s'ajouter sans casser le modèle.
+
+---
+
 ## 2026-03-25 (copies physiques, feature 05)
 
 ### Modifications

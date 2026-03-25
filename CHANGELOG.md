@@ -5,6 +5,16 @@ Toutes les modifications notables sont documentées dans ce fichier.
 Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.6.0] - 2026-03-25
+
+### Added
+
+- Entité `Container` et énum `ContainerKind` (hiérarchie parent / enfant, archivage via cycle de vie).
+- Port `ContainerRepositoryPort`, `ContainerApplicationService` (création, mise à jour, archivage,
+  rattachement, déplacement, liste des enfants directs).
+- Exceptions `InvalidContainerException`, `ContainerNotFoundException`, `ContainerCycleException`.
+- Détection explicite des cycles lors des changements de parent et tests associés.
+
 ## [0.5.0] - 2026-03-25
 
 ### Added
