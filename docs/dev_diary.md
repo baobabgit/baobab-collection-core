@@ -4,6 +4,24 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (documentation & préparation release, feature 12)
+
+### Modifications
+
+- README structuré (objectifs, installation, concepts, offline-first, synchro, exemples, qualité,
+  versioning) ; nouveaux documents `docs/architecture.md`, `business_domain.md`,
+  `synchronization.md`, index des features, `RELEASE_CHECKLIST.md`.
+
+### Buts
+
+- Rendre le dépôt auditable et utilisable par un intégrateur sans fouiller tout le code.
+
+### Impact
+
+- Version **0.12.0** ; pas de publication PyPI dans cette livraison.
+
+---
+
 ## 2026-03-25 (adaptateurs mémoire + intégration, feature 11)
 
 ### Modifications
