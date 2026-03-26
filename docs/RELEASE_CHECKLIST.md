@@ -2,6 +2,8 @@
 
 Liste opérationnelle **avant** de taguer ou publier une version (PyPI ou dépôt privé). Aucune étape ci-dessous ne déclenche de publication automatique.
 
+**Exécution intégrale (v1.0.0)** : journal factuel point par point dans [release_checklist_execution_1.0.0.md](release_checklist_execution_1.0.0.md) (2026-03-25). À refaire pour chaque release future.
+
 ## Code et API
 
 - [ ] `pyproject.toml` : version **SemVer** cohérente avec [CHANGELOG.md](../CHANGELOG.md).

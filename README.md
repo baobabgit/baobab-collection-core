@@ -34,7 +34,7 @@ Le package **n’a pas de dépendances obligatoires** (stdlib + domaine pur).
 python -m pip install -e ".[dev]"
 ```
 
-Le extra `dev` ajoute outils de qualité : `pytest`, `pytest-cov`, `black`, `mypy`, `pylint`, `flake8`, `bandit`.
+Le extra `dev` ajoute outils de qualité : `pytest`, `pytest-cov`, `black`, `mypy`, `pylint`, `flake8`, `bandit`, `build` (artefacts sdist/wheel).
 
 ### Utilisation comme dépendance (sans publication ici)
 
