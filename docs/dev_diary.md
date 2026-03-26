@@ -4,6 +4,23 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (préparation publication v1.0.0 — GitHub & PyPI)
+
+### Modifications
+
+- Guide [release_v1.0.0_publishing.md](release_v1.0.0_publishing.md) : titre et corps de release GitHub
+  (copier-coller), tag `v1.0.0`, `build` / `twine check` / `twine upload`, ordre d’exécution,
+  tableau de cohérence version / changelog / artefacts.
+- [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) : renvoi post-release vers ce guide ; [README](../README.md) :
+  lien « publication v1.0.0 ».
+
+### Buts
+
+- Permettre une publication **sans ambiguïté** sans automatiser ni exécuter PyPI / GitHub Release depuis le CI
+  (décision mainteneur).
+
+---
+
 ## 2026-03-26 (release stable v1.0.0 — packaging et documentation)
 
 ### Modifications
