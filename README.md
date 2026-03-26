@@ -189,7 +189,8 @@ Rapports de couverture : `docs/tests/coverage/html/` et `coverage.xml`.
 - L’historique détaillé est dans [CHANGELOG.md](CHANGELOG.md).
 - La version canonique est `pyproject.toml` ; `baobab_collection_core.__version__` lit les métadonnées d’installation ou une **repli** alignée sur cette version.
 
-Checklist avant une prochaine release : [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
+Checklist avant une prochaine release : [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).  
+Publication **v1.0.0** (GitHub Release, tag `v1.0.0`, PyPI) : [docs/release_v1.0.0_publishing.md](docs/release_v1.0.0_publishing.md).
 
 ## Contribution
 
@@ -205,6 +206,7 @@ Messages de commit : style **Conventional Commits** (voir contraintes projet).
 - [Cahier des charges](docs/01_specifications.md)
 - [Contraintes de développement](docs/00_dev_constraints.md)
 - [Journal de développement](docs/dev_diary.md)
+- [Publication v1.0.0 (GitHub / PyPI)](docs/release_v1.0.0_publishing.md)
 
 ## Licence
 

@@ -44,3 +44,5 @@ Liste opérationnelle **avant** de taguer ou publier une version (PyPI ou dépô
 
 - [ ] Tag Git `vX.Y.Z` sur le commit de release.
 - [ ] Publication PyPI / registre privé selon politique Baobab.
+
+Pour la **v1.0.0** : procédure détaillée (texte de release GitHub, commandes `build` / `twine`, tag `v1.0.0`) dans [release_v1.0.0_publishing.md](release_v1.0.0_publishing.md).
