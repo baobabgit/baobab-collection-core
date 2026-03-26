@@ -22,6 +22,22 @@ Les entrées les plus récentes en premier.
 
 ---
 
+## 2026-03-25 (checklist release v1.0.0 — exécution intégrale)
+
+### Modifications
+
+- Journal factuel [release_checklist_execution_1.0.0.md](release_checklist_execution_1.0.0.md) ;
+  renvoi depuis [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).
+- Fiche [features/11_in_memory_adapters_and_integration_tests.md](features/11_in_memory_adapters_and_integration_tests.md)
+  complétée (n’était plus vide).
+- README : mention de l’outil `build` dans l’extra `dev` ; `.gitignore` : `.rc-checklist-venv/`.
+
+### Buts
+
+- Prouver par des commandes réelles que la **v1.0.0** est prête à être taguée / publiée selon la checklist.
+
+---
+
 ## 2026-03-25 (documentation & préparation release, feature 12)
 
 ### Modifications
